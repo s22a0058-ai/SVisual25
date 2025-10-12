@@ -5,4 +5,3 @@ st.set_page_config(
 )
 
 st.header("Scientific Visualization", divider="gray")
-```
