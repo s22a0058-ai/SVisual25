@@ -1,4 +1,3 @@
 pandas
 plotly.express
 streamlit
-seaborn as sns
