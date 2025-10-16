@@ -121,7 +121,6 @@ st.markdown("""
 
 import streamlit as st
 import pandas as pd
-import seaborn as sns
 
 # Assuming 'arts_df' is a pre-loaded DataFrame.
 # For this Streamlit app to run, you need to replace this with your actual data loading.
