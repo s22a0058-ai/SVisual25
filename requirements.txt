@@ -1,5 +1,4 @@
 pandas
 plotly.express
 streamlit
-matplotlib.pyplot as plt
 seaborn as sns
