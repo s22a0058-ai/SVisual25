@@ -16,13 +16,10 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-col1.metric(label="PLO 2", value=f"3.3", help="PLO 2: Cognitive Skill", border=True)
-col2.metric(label="PLO 3", value=f"3.5", help="PLO 3: Digital Skill", border=True)
-col3.metric(label="PLO 4", value=f"4.0", help="PLO 4: Interpersonal Skill", border=True)
-col4.metric(label="PLO 5", value=f"4.3", help="PLO 5: Communication Skill", border=True)
-
 st.header("Faculty Data Analysis", divider="gray")
 st.markdown("Analyzing gender distribution from the Arts Faculty dataset using Plotly for interactive visualization.")
+
+
 
 # --- Data Loading ---
 @st.cache_data
@@ -36,6 +33,11 @@ def load_data():
     except Exception as e:
         st.error(f"Error loading data from URL: {e}")
         return pd.DataFrame()
+
+col1.metric(label="PLO 2", value=f"3.3", help="PLO 2: Cognitive Skill", border=True)
+col2.metric(label="PLO 3", value=f"3.5", help="PLO 3: Digital Skill", border=True)
+col3.metric(label="PLO 4", value=f"4.0", help="PLO 4: Interpersonal Skill", border=True)
+col4.metric(label="PLO 5", value=f"4.3", help="PLO 5: Communication Skill", border=True)
 
 col1, col2, col3, col4 = st.columns(4)
 
